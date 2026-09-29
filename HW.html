@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work</title>
+</head>
+
+<style>
+    .contact_container {
+        /* width: 100%; */
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+
+    .container {
+        background-color: aqua;
+        width: 30%;
+        padding: 2rem;
+        border-radius: 16px;
+        border: 2px solid gray;
+        box-shadow: 0 10px 25px black
+    }
+
+    .first .form1 label,
+    .second .form1 label,
+    .form1 {
+        margin-top: 30px;
+        color: gray;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .first {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .first .form1 input {
+        width: 85%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid gray;
+    }
+
+    .second {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form1 textarea {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid gray;
+    }
+
+    .btn_submit {
+        width: 100%;
+        padding: 13px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: aqua;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-left: 5px;
+    }
+</style>
+
+<body>
+    <form>
+        <div class="contact_container">
+            <div class="container">
+                <div class="first">
+                    <div class="form1">
+                        <label>First Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form1">
+                        <label for="last name">Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="second">
+                    <div class="form1">
+
+                        <input type="checkbox">
+                        <label for="male">Male</label>
+                    </div>
+
+                    <div class="form1">
+
+                        <input type="checkbox">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="form1">
+
+                        <input type="checkbox">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="form1">
+                    <label for="message">Message</label>
+                    <textarea rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn_submit">submit</button>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

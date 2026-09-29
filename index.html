@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/InLay.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Pannel-X</a>
+
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+
+
+    <!--main-->
+    <main>
+        <section id="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/BMW 3jpg.jpg" alt="">
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/honda 4jpg.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-scrollbar"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- about_us -->
+        <section id="about_us">
+            <div class="about_container">
+                
+                <div class="left" data-aos="fade-right">
+                    <img src="images/photo_2026-07-22_15-29-54 (2).jpg">
+                </div>
+
+                <div class="right">
+                    <small data-aos="fade-left" data-aos-delay="200">About us</small>
+                    <h1 data-aos="fade-left" data-aos-delay="400">Lorem Ipsum</h1>
+                    <p data-aos="fade-left" data-aos-delay="600">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Molestias nulla totam obcaecati fugiat
+                        earum eos sapiente id? Hic, dolor? Dolores, repellendus architecto modi impedit neque
+                        reprehenderit similique atque deleniti quos?</p>
+                </div>
+            </div>
+        </section>
+        <!-- services -->
+        <section id="services">
+            <div class="services_container">
+                <h1>Why shop with us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nisi optio sequi dolore eos quam?
+                    Dolorum maxime autem cumque earum, rerum praesentium impedit culpa quasi nam quaerat cupiditate
+                    velit suscipit!
+                </p>
+                    <div class="services_cards">
+                        <div class="card">
+                            <i class="fa-regular fa-truck"></i>
+                            <h2>Fast Delivery</h2>
+                            <p>Free shipping to all townships</p>
+                        </div>
+
+                        <div class="card">
+                            <i class="fa-solid fa-shield"></i>
+                            <h2>Secure Payment</h2>
+                            <p>Your payment is secure with out enctyped system</p>
+                        </div>
+
+                        <div class="card">
+                            <i class="fa-solid fa-headset"></i>
+                            <h2>24/7 support</h2>
+                            <p>Our dedicated team is here to help you anytime</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2026 My Website.All right reserve.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {delay: 3000, },
+            speed: 2000,
+            effect: 'fade',
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 700,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom'
+
+        });
+    </script>
+
+</body>
+
+</html>
